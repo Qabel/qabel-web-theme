@@ -55,7 +55,7 @@ l10n process
 ------------
 
 - https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#localization-how-to-create-language-files
-
+- Lokalize is a pretty good translation tool, but there many other tools for most platforms as well.
 
 Menus
 -----
