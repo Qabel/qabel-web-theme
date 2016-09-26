@@ -11,13 +11,13 @@ Usage checklist
 
 1. Add package to requirements.txt:
 
-    This is not uploaded to any package index, therefore it should be referenced like
-    this in requirements::
+   This is not uploaded to any package index, therefore it should be referenced like
+   this in requirements::
 
         git://github.com/Qabel/qabel-web-theme.git@<RELEASE>
 
-    The ``@<RELEASE>`` part specifies a specific commit/tag/branch. It should be absolute,
-    not master/HEAD/...
+   The ``@<RELEASE>`` part specifies a specific commit/tag/branch. It should be absolute,
+   not master/HEAD/...
 
 2. Add ``qabel_web_theme`` to the ``APPLICATIONS`` setting (before other apps)::
 
