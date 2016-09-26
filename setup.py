@@ -34,6 +34,8 @@ setup(
     package_data={
         'qabel_web_theme': [
             'templates/*.html',
+            'templates/*.txt',
+            'templates/admin/*.html',
             'locale/*/LC_MESSAGES/*',
             'static/favicon.ico',
             'static/css/*.css',
