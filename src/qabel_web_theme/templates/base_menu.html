@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block headernav %}
+<ul class="nav navbar-nav">
+    {% for menu_entry in theme.menu %}
+    <li><a {% if menu_entry.active %}class="active"{% endif %} href="{{ menu_entry.url }}">{{ menu_entry.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

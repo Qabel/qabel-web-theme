@@ -1,0 +1,6 @@
+*~
+__pycache__
+_venv
+.eggs
+*.egg-info
+theme_test/db.sqlite3

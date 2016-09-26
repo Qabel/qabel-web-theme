@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="margin: 0; padding: 0">
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-family: sans-serif;">
+    {# It's 2016, but the best way to format a HTML mail is using tables #}
+    <tr style="background-color: #ff5908; color: white;">
+        <td colspan="2">{% include "logo1.html" %}</td>
+        <td colspan="3">{% block maintitle %}<h2>Qabel Account Registrierung</h2>{% endblock %}</td>
+    </tr>
+    <tr>
+        <td width="10%"></td>
+        <td colspan="3" style="font-style: italic; color: gray;">
+            <p>English version below.</p>
+        </td>
+        <td width="10%"></td>
+    </tr>
+    {% block nativeheading %}
+    <tr>
+        <td width="50%" colspan="3" style="text-align: right; background-color: #bbb;">Danke, dass Sie sich für Qabel entschieden haben. <span
+                style="color: white; font-size: 150%;">♥</span></td>
+        <td colspan="2"></td>
+    </tr>
+    {% endblock %}
+
+    <tr>
+        <td width="10%"></td>
+        <td colspan="3">
+            {% block nativecontent %}
+            <p>Bitte klicken Sie auf den nachfolgenden Link,<br>
+                um die Registrierung Ihres Qabel Accounts abzuschließen.</p>
+
+            <p>
+                <a href="/somewhere"
+                   style="background-color: #ff5908; border-radius: 4px; color: white; padding: 5px; text-decoration: none;">Aktivierungslink</a>
+            </p>
+
+            <p>Viel Spaß beim Testen, wir freuen uns auf Ihr Feedback!</p>
+
+            <p>
+                Wenn Sie sich nicht bei Qabel angemeldet haben, dann ignorieren
+                Sie diese Mail bitte, oder schreiben Sie uns einen Hinweis an
+                <a href="mailto:abuse@qabel.de">abuse@qabel.de</a>.
+            </p>
+            {% endblock %}
+        </td>
+        <td width="10%"></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="border-bottom: dashed 3px #bbb;"></td>
+    </tr>
+
+    <tr>
+        <td colspan="5">&nbsp;</td>
+    </tr>
+
+    {% block englishheading %}
+    <tr>
+        <td width="33%" colspan="2" style="text-align: right; background-color: #bbb;">Thank you for choosing Qabel. <span
+                style="color: white; font-size: 150%;">♥</span></td>
+        <td colspan="3"></td>
+    </tr>
+    {% endblock %}
+
+    <tr>
+        <td width="10%"></td>
+        <td colspan="3">
+            {% block englishcontent %}
+            <p>Please click on the link below to complete the registration.</p>
+
+            <p>
+                <a href="/somewhere"
+                   style="background-color: #ff5908; border-radius: 4px; color: white; padding: 5px; text-decoration: none;">Activation link</a>
+            </p>
+
+            <p>Enjoy testing Qabel! We're looking forward to your feedback.</p>
+
+            <p>
+                If you did not sign up for Qabel, please ignore this mail, or make us aware of
+                this by sending a mail to <a href="mailto:abuse@qabel.de">abuse@qabel.de</a>.
+            </p>
+            {% endblock %}
+        </td>
+        <td width="10%"></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="border-bottom: dashed 3px #bbb;"></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="text-align: right">{% include "logo2.html" %}</td>
+        <td colspan="3">
+            <p>
+                Qabel GmbH<br>
+                Goseriede 4 / Tiedthof . 30159 Hannover<br>
+                Registergericht: Amtsgericht Hannover . HRB 210757<br>
+                USt-IdNr.: DE293570022<br>
+                Geschäftsführer: Peter Leppelt
+            </p>
+        </td>
+    </tr>
+
+
+</table>
+</body>
+</html>

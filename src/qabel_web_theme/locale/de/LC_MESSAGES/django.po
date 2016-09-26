@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-26 08:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr ""
+
+#: templates/admin/base_site.html:9
+msgid "Qabel administration"
+msgstr ""
+
+#: templates/base.html:121
+msgid "Bitte vertrauen Sie uns nicht. Es ist nicht nötig."
+msgstr ""
+
+#: templates/base.html:126
+msgctxt "qabel.de URL"
+msgid "/de/impressum"
+msgstr ""
+
+#: templates/base.html:126
+msgid "Impressum"
+msgstr ""
+
+#: templates/base.html:127
+msgctxt "qabel.de URL"
+msgid "/de/datenschutz"
+msgstr ""
+
+#: templates/base.html:127
+msgid "Datenschutz"
+msgstr ""
+
+#: templates/base.html:128
+msgctxt "qabel.de URL"
+msgid "/de/agb"
+msgstr ""
+
+#: templates/base.html:128
+msgid "AGB"
+msgstr ""
+
+#: templates/base.html:129
+msgctxt "qabel.de URL"
+msgid "/de/lizenz"
+msgstr ""
+
+#: templates/base.html:129
+msgid "Lizenz"
+msgstr ""
+
+#: templates/base.html:130
+msgctxt "qabel.de URL"
+msgid "/de/dmca"
+msgstr ""
+
+#: templates/base.html:130
+msgid "DMCA-Policy"
+msgstr ""

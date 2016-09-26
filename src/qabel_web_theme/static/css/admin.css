@@ -1,0 +1,92 @@
+#header {
+    width: auto;
+    height: 40px;
+    padding: 10px 40px;
+    background-color: #333;
+    line-height: 40px;
+    color: #fff;
+    overflow: hidden;
+}
+
+#branding h1 {
+    color: #ff690f;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #ff690f;
+}
+
+#header a:focus , #header a:hover {
+    border-bottom-color: #ff690f;
+    color: #ff690f;
+}
+
+
+h1 {
+    color: black;
+}
+
+.dashboard #content h1 {
+    /* What's that one good for anyway? May be somewhat interesting for onprem tho */
+    display: none;
+}
+
+.module h2,
+.module caption,
+.inline-group h2,
+.selector-chosen h2 {
+    background: #333 !important;
+    color: #fff !important;
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    background-color: #555;
+    color: #fff;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active,
+.button:focus, input[type=submit]:focus, input[type=button]:focus,
+.button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background: #777;
+}
+
+.button.default,
+input[type="submit"].default,
+input[type="button"].default,
+.submit-row input.default,
+a.button.default {
+    background-color: #000;
+    color: #ff690f;
+}
+
+.button.default:active, input[type=submit].default:active,
+.button.default:focus, input[type=submit].default:focus,
+.button.default:hover, input[type=submit].default:hover {
+    background-color: #555;
+}
+
+#changelist-filter li.selected a {
+    color: #ff690f !important;
+}
+
+#changelist-filter li.selected {
+    border-left: 5px solid #ddd !important;
+    /* qabelorange also looks good here */
+}
+
+div.breadcrumbs {
+    background: #555;
+    color: #fff;
+}
+
+div.breadcrumbs a {
+    color: #ddd;
+}
+
+a:focus , a:hover {
+    color: #ff690f !important;
+}

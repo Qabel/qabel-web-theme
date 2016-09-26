@@ -1,0 +1,49 @@
+
+{% block maintitle %}
+---------------------------
+Qabel Account Registrierung
+---------------------------
+{% endblock %}
+
+English version below.
+
+{% block nativeheading %}
+Danke, dass Sie sich für Qabel entschieden haben.
+{% endblock %}
+
+{% block nativecontent %}
+Bitte klicken Sie auf den nachfolgenden Link,
+um die Registrierung Ihres Qabel Accounts abzuschließen.
+
+/somewhere
+
+Viel Spaß beim Testen, wir freuen uns auf Ihr Feedback!
+
+Wenn Sie sich nicht bei Qabel angemeldet haben, dann ignorieren
+Sie diese Mail bitte, oder schreiben Sie uns einen Hinweis an
+abuse@qabel.de ( mailto:abuse@qabel.de ).
+{% endblock %}
+
+{% block englishheading %}
+Thank you for choosing Qabel.
+{% endblock %}
+
+{% block englishcontent %}
+Please click on the link below to complete the
+registration.
+
+/somewhere
+
+Enjoy testing Qabel! We're looking forward to your feedback.
+
+If you did not sign up for Qabel, please ignore this mail, or
+make us aware of this by sending a mail to abuse@qabel.de .
+{% endblock %}
+
+--
+
+Qabel GmbH
+Goseriede 4 / Tiedthof . 30159 Hannover
+Registergericht: Amtsgericht Hannover . HRB 210757
+USt-IdNr.: DE293570022
+Geschäftsführer: Peter Leppelt
