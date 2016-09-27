@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,11 +43,9 @@
 
             <p>Viel Spaß beim Testen, wir freuen uns auf Ihr Feedback!</p>
 
-            <p>
-                Wenn Sie sich nicht bei Qabel angemeldet haben, dann ignorieren
-                Sie diese Mail bitte, oder schreiben Sie uns einen Hinweis an
-                <a href="mailto:abuse@qabel.de">abuse@qabel.de</a>.
-            </p>
+            {% endblock %}
+            {% block nativeabuse %}
+            <p>{% blocktrans context "HTML" %}abuse paragraph{% endblocktrans %}</p>
             {% endblock %}
         </td>
         <td width="10%"></td>
@@ -80,11 +79,11 @@
             </p>
 
             <p>Enjoy testing Qabel! We're looking forward to your feedback.</p>
-
-            <p>
-                If you did not sign up for Qabel, please ignore this mail, or make us aware of
-                this by sending a mail to <a href="mailto:abuse@qabel.de">abuse@qabel.de</a>.
-            </p>
+            {% endblock %}
+            {% block englishabuse %}
+            {% language "en" %}
+            <p>{% blocktrans context "HTML" %}abuse paragraph{% endblocktrans %}</p>
+            {% endlanguage %}
             {% endblock %}
         </td>
         <td width="10%"></td>

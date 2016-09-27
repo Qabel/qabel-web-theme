@@ -1,4 +1,4 @@
-
+{% load i18n %}
 {% block maintitle %}
 ---------------------------
 Qabel Account Registrierung
@@ -18,10 +18,9 @@ um die Registrierung Ihres Qabel Accounts abzuschließen.
 /somewhere
 
 Viel Spaß beim Testen, wir freuen uns auf Ihr Feedback!
-
-Wenn Sie sich nicht bei Qabel angemeldet haben, dann ignorieren
-Sie diese Mail bitte, oder schreiben Sie uns einen Hinweis an
-abuse@qabel.de ( mailto:abuse@qabel.de ).
+{% endblock %}
+{% block nativeabuse %}
+{% trans "abuse paragraph" context "plaintext" %}
 {% endblock %}
 
 {% block englishheading %}
@@ -38,6 +37,12 @@ Enjoy testing Qabel! We're looking forward to your feedback.
 
 If you did not sign up for Qabel, please ignore this mail, or
 make us aware of this by sending a mail to abuse@qabel.de .
+{% endblock %}
+
+{% block englishabuse %}
+{% language "en" %}
+{% trans "abuse paragraph" context "plaintext" %}
+{% endlanguage %}
 {% endblock %}
 
 --
