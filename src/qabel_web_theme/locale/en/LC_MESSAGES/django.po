@@ -91,4 +91,4 @@ msgstr ""
 "make us aware of this by sending a mail to abuse@qabel.de"
 
 msgid "rainin blood"
-msgstr "<3"
+msgstr ""

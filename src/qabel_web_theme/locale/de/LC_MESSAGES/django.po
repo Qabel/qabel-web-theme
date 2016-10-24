@@ -88,3 +88,6 @@ msgid "abuse paragraph"
 msgstr ""
 "Wenn Sie sich nicht bei Qabel angemeldet haben, dann ignorieren Sie diese\n"
 "Mail bitte, oder schreiben Sie uns einen Hinweis an abuse@qabel.de"
+
+msgid "rainin blood"
+msgstr ""
