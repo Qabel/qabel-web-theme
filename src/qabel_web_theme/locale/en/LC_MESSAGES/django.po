@@ -89,3 +89,6 @@ msgid "abuse paragraph"
 msgstr ""
 "If you did not sign up for Qabel, please ignore this mail, or\n"
 "make us aware of this by sending a mail to abuse@qabel.de"
+
+msgid "rainin blood"
+msgstr "<3"
