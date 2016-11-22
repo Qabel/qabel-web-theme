@@ -96,3 +96,14 @@ It also requires the use of the ``base_menu.html`` template, and the use of ``Te
 (the two are compatible). Suggestion::
 
     from django.template.response import TemplateResponse as render
+
+Running the test project
+------------------------
+
+Standard flow applies::
+
+    # v- the Debian compatible way of putting it (Arch etc. can just do 'virtualenv _venv')
+    python3 -m virtualenv --python=python3 _venv
+    .  _venv/bin/activate
+    pip install . django
+    python theme_test/manage.py runserver
