@@ -19,17 +19,21 @@ Usage checklist
    The ``@<RELEASE>`` part specifies a specific commit/tag/branch. It should be absolute,
    not master/HEAD/...
 
-2. Add ``qabel_web_theme`` to the ``APPLICATIONS`` setting (before other apps)::
+2. Add ``qabel_web_theme`` to the ``APPLICATIONS`` setting (before other apps):
 
-    INSTALLED_APPS = [
-        'qabel_web_theme',
-        'django...',
-         ...
-    ]
+   .. code-block:: python
+
+      INSTALLED_APPS = [
+          'qabel_web_theme',
+          'django...',
+           ...
+      ]
 
 3. If not done already, ``USE_I18N = USE_L10N = USE_TZ = True`` and set a proper default
    language code, i.e. ``LANGUAGE_CODE = 'de-DE'``, and ``LANGUAGES``, if more than one language
-   should be supported, eg::
+   should be supported, e.g.:
+   
+   .. code-block:: python
 
         from django.utils.translation import ugettext_lazy as _
 
@@ -40,7 +44,9 @@ Usage checklist
 
 4. Also enable the ``django.middleware.locale.LocaleMiddleware`` middleware
 
-5. Add ``switch_language`` view to the URLconf::
+5. Add ``switch_language`` view to the URLconf:
+
+   .. code-block:: python
 
         from qabel_web_theme import urls as theme_urls
 
@@ -60,7 +66,9 @@ l10n process
 Menus
 -----
 
-Setting ``MENU`` is list/tuple of dotted paths to functions creating your menu. Example::
+Setting ``MENU`` is list/tuple of dotted paths to functions creating your menu. Example:
+
+.. code-block:: python
 
     from django.utils.translation import ugettext_lazy as _
 
@@ -85,7 +93,9 @@ view processing has completed. Every menu entry is a ``dict``, with at least a `
 or ``url``. The ``view`` is either a view name, or a view callable. When a view is used, parameters can be passed
 just as you would for ``reverse`` via ``args`` and ``kwargs``.
 
-Menu support requires ``MenuMiddleware``::
+Menu support requires ``MenuMiddleware``:
+
+.. code-block:: python
 
     MIDDLEWARE_CLASSES = [
         ...
@@ -93,7 +103,9 @@ Menu support requires ``MenuMiddleware``::
     ]
 
 It also requires the use of the ``base_menu.html`` template, and the use of ``TemplateResponse`` instead of ``render``
-(the two are compatible). Suggestion::
+(the two are compatible). Suggestion:
+
+.. code-block:: python
 
     from django.template.response import TemplateResponse as render
 
