@@ -2,7 +2,7 @@ from functools import lru_cache
 
 from django.conf import settings
 from django.utils.module_loading import import_string
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 try:
     from django.utils.deprecation import MiddlewareMixin
 except ImportError:
